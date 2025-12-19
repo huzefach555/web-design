@@ -1,65 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <a href="#" class="logo">Huzefa <span>Arshad</span></a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="Service.html">Services</a></li>
-      <li><a href="#Contect.html">Contect us </a></li>
-    </ul>
-  </header>
-  <div class="maintext">
-    <h4>Hi, I am <span>Huzefa Arshad</span></h4>
-    <h1><span>Web</span> Developer</h1>
-    <p>
-      I design and develop websites that help businesses grow.<br>
-      Clean UI, fast performance, and a great user experience — <br>that’s my goal.
-    </p>
-    <button>Hire me</button>
-  </div>
-  <div class="mainimage">
-    <img src="image-removebg-preview.png" class="myimage">
-  </div>
-  <div class="socialicons">
-    <img src="Github_icon-removebg-preview.png" alt="Github" class="icon">
-    <img src="Facebook_icon-removebg-preview.png" alt="Facebook" class="icon">
-    <img src="Linked_icon-removebg-preview.png" alt="Linked" class="icon">
-  </div>
-  <div class="about">
-    <h2 >About me</h2>
-    <p id="aboutP">
-      I’m a passionate and dedicated web creator who loves turning ideas into beautiful, functional websites. With strong skills in WordPress and modern design practices, I help individuals and businesses build their online presence with ease. I focus on clean layouts, user-friendly interfaces, and practical solutions that make websites not only look good but also work smoothly. My goal is simple — to create websites that inspire, perform, and help you grow online.
-    </p>
-    <button id="aboutB">More Detailes</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Professional portfolio of Huzefa Arshad, Web Developer" />
+    <title>Huzefa Arshad - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Huzefa <span>Arshad</span></a>
+      <!-- test update -->
+      <!-- Mobile menu button -->
+      <button class="menu-btn" aria-label="Toggle navigation menu">
+        <span class="menu-btn__lines"></span>
+      </button>
+      
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="Service.html">Services</a></li>
+          <li><a href="Contect.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <div class="maintext">
+        <h4>Hi, I am <span>Huzefa Arshad</span></h4>
+        <h1><span>Web</span> Developer</h1>
+        <p>
+          I design and develop websites that help businesses grow.
+          Clean UI, fast performance, and a great user experience — that's
+          my goal.
+        </p>
+        <button class="cta-button">Hire me</button>
       </div>
-    <footer>
-      <div class="footerI">
-        <img src="icons8-github-logo-48.png" alt="Github" class="Ficons">
-        <img src="icons8-facebook-logo-48.png" alt="Facebook" class="Ficons">
-        <img src="icons8-linkedin-48.png" alt="Linked" class="Ficons">
+      
+      <div class="mainimage">
+        <img 
+          src="image-removebg-preview.png" 
+          alt="Huzefa Arshad - Web Developer" 
+          class="myimage" 
+          loading="lazy"
+        />
       </div>
-      <div class="footerlist">
-      <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="Service.html">Services</a></li>
-      <li><a href="Contect.html">Contect us </a></li>
-    </ul>
+      
+      <div class="socialicons">
+                  <a href="https://github.com/huzefach555"target="_blank" aria-label="GitHub">
+            <img src="icons8-github-logo-48.png" alt="GitHub" class="Ficons" />
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61575576665041"target="_blank" aria-label="Facebook">
+            <img src="icons8-facebook-logo-48.png" alt="Facebook" class="Ficons" />
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-huzefa-arshad-b4ba8b378/"target="_blank" aria-label="LinkedIn">
+            <img src="icons8-linkedin-48.png" alt="LinkedIn" class="Ficons" />
+          </a>
       </div>
-    </footer>
-      <h6>
-        powered by <span>huzefa arshad</span> <br> @2026
-      </h6>
-</body>
+    </main>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About me</h2>
+        <p id="aboutP">
+          I'm a passionate and dedicated web creator who loves turning ideas into
+          beautiful, functional websites. With strong skills in WordPress and
+          modern design practices, I help individuals and businesses build their
+          online presence with ease. I focus on clean layouts, user-friendly
+          interfaces, and practical solutions that make websites not only look
+          good but also work smoothly. My goal is simple — to create websites that
+          inspire, perform, and help you grow online.
+        </p>
+        <button id="aboutB" class="secondary-button">More Details</button>
+      </div>
+    </section>
+    <footer class="perfect-footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    
+    <div class="footer-main-grid">
+      <div class="footer-block brand-info">
+        <h2 class="footer-logo">Huzefa<span>.</span></h2>
+        <p>Elevating digital aesthetics through purposeful motion and minimalist architecture.</p>
+        <div class="social-row">
+          <a href="https://web.facebook.com/profile.php?id=61575576665041"target="_blank" class="social-icon"><span>Fb</span></a>
+          <a href="https://github.com/huzefach555" class="social-icon"target="_blank"><span>Ig</span></a>
+          <a href="https://www.instagram.com/huzefa._.arshad/?next=%2F&hl=en"target="_blank" class="social-icon"><span>In</span></a>
+          <a href="https://www.linkedin.com/in/muhammad-huzefa-arshad-b4ba8b378/"target="_blank" class="social-icon"><span>Li</span></a>
+        </div>
+      </div>
 
+      <div class="footer-block">
+        <h4 class="block-title">Services</h4>
+        <ul class="footer-nav">
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block">
+        <h4 class="block-title">Company</h4>
+        <ul class="footer-nav">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block newsletter-block">
+        <h4 class="block-title">Newsletter</h4>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Email Address">
+          <button type="submit">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p>&copy; 2025 Huzefa Arshad. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector('.menu-btn');
+      const nav = document.querySelector('nav');
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+      document.body.appendChild(overlay);
+      
+      function toggleMenu() {
+        nav.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+      }
+      
+      menuBtn.addEventListener('click', toggleMenu);
+      
+      // Close menu when clicking on overlay
+      overlay.addEventListener('click', toggleMenu);
+      
+      // Close menu when clicking on a nav link
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 900) {
+            toggleMenu();
+          }
+        });
+      });
+      
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+          nav.classList.remove('active');
+          document.body.classList.remove('no-scroll');
+        }
+      });
+      
+      // Update current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Add smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Add scroll animation
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        header.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
+  </body>
 </html>
-
-
