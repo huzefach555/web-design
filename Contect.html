@@ -1,87 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contect page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Huzefa <span>Arshad</span></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="Service.html">Services</a></li>
-        <li><a href="Contect.html">Contect us </a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Premium Experience</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header section -->
+   <header>
+      <a href="index.html" class="logo">Huzefa <span>Arshad</span></a>
+      <!-- Mobile menu button -->
+      <button class="menu-btn" aria-label="Toggle navigation menu">
+        <span class="menu-btn__lines"></span>
+      </button>
+      
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="Service.html" class="active">Services</a></li>
+          <li><a href="Contect.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <h2 id="heading"><span>Contect</span> us</h2>
-    <div class="containor">
-      <div class="Box1">
-        <form class="contact-form">
-          <h2>Send a Message</h2>
+  <!-- Background Blobs -->
+  <div class="blob one"></div>
+  <div class="blob two"></div>
 
-          <div class="input-group">
-            <input type="text" required />
-            <label>Your Name</label>
-          </div>
+  <main class="contect_container">
+    <section class="contact-card">
 
-          <div class="input-group">
-            <input type="email" required />
-            <label>Your Email</label>
-          </div>
-
-          <div class="input-group">
-            <textarea required></textarea>
-            <label>Your Message</label>
-          </div>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="Box2">
-        <h1>Let’s Talk</h1>
+      <!-- Left Content -->
+      <div class="contact-info">
+        <h1>Let’s Create Something Extraordinary</h1>
         <p>
-          Have a question or want to work together? Fill out the form and I will
-          reply ASAP.
+          Have an idea, project, or vision?  
+          Reach out and let’s turn it into a remarkable digital experience.
         </p>
 
-        <div class="info-box">
-          <h3>Email</h3>
-          <p>huzefach555@gmail.com</p>
+        <div class="contact-details">
+          <span>📧 huzefach555@gmail.com</span>
+          <span>📞 +92 345 7635111</span>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <input type="text" placeholder="Your Name" required>
         </div>
 
-        <div class="info-box">
-          <h3>Phone</h3>
-          <p>+92 345 7635111</p>
+        <div class="field">
+          <input type="email" placeholder="Your Email" required>
         </div>
 
-        <div class="info-box">
-          <h3>Location</h3>
-          <p>Lahore, Pakistan</p>
+        <div class="field">
+          <textarea placeholder="Tell us about your idea…" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p class="success" id="successMsg">
+          ✨ Message sent successfully. We’ll be in touch.
+        </p>
+      </form>
+
+    </section>
+  </main>
+  <footer class="perfect-footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    
+    <div class="footer-main-grid">
+      <div class="footer-block brand-info">
+        <h2 class="footer-logo">Huzefa<span>.</span></h2>
+        <p>Elevating digital aesthetics through purposeful motion and minimalist architecture.</p>
+        <div class="social-row">
+          <a href="https://web.facebook.com/profile.php?id=61575576665041"  target="_blank"class="social-icon"><span>Fb</span></a>
+          <a href="https://github.com/huzefach555" class="social-icon" target="_blank"><span>Ig</span></a>
+          <a href="https://www.instagram.com/huzefa._.arshad/?next=%2F&hl=en" target="_blank" class="social-icon"><span>In</span></a>
+          <a href="https://www.linkedin.com/in/muhammad-huzefa-arshad-b4ba8b378/"target="_blank" class="social-icon"><span>Li</span></a>
+        </div>
+      </div>
+
+      <div class="footer-block">
+        <h4 class="block-title">Services</h4>
+        <ul class="footer-nav">
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block">
+        <h4 class="block-title">Company</h4>
+        <ul class="footer-nav">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block newsletter-block">
+        <h4 class="block-title">Newsletter</h4>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Email Address">
+          <button type="submit">→</button>
         </div>
       </div>
     </div>
-    <div class="CFooter">
-      <footer>
-      <div class="footerI">
-        <img src="icons8-github-logo-48.png" alt="Github" class="Ficons" />
-        <img src="icons8-facebook-logo-48.png" alt="Facebook" class="Ficons" />
-        <img src="icons8-linkedin-48.png" alt="Linked" class="Ficons" />
+
+    <div class="footer-legal">
+      <p>&copy; 2025 Huzefa Arshad. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
       </div>
-      <div class="footerlist">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="Service.html">Services</a></li>
-          <li><a href="Contect.html">Contect us </a></li>
-        </ul>
-      </div>
-    </footer>
-    <h6>© 2025 MyWebsite — All Rights Reserved</h6>
-</div>
-  </body>
+    </div>
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
 </html>
-
-
